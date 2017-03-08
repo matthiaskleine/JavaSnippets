@@ -21,6 +21,7 @@ public class ArrayToList {
 	// Version 1.1
 	// Initialize the collection by a literally given array.
 	// Boxing works here because of the varargs signature of asList(Integer... a).
+	// This is actually not an array to collection conversion.
 	public static List<Integer> mymethod1_1() {
 		return Arrays.asList(1, 2, 3, 4);
 	}
