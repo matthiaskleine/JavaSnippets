@@ -9,6 +9,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import org.apache.commons.lang3.time.DateUtils;
+
 public class DateRepresentations {
 
 	// oldest old school, ParseException necessary
@@ -16,7 +18,12 @@ public class DateRepresentations {
 		return new SimpleDateFormat( "dd.MM.yyyy" ).parse( "08.03.2017" );
 	}
 	
-	// old school
+	// variation with Apache Commons 3.5, also needs ParseException
+	public static Date date_commons() throws ParseException {
+		return DateUtils.parseDate("08.03.2017", "dd.MM.yyyy" );
+	}
+	
+	// still old school
 	public static Calendar calendar() {
 		return new GregorianCalendar(2017, Calendar.MARCH, 8);
 	}
