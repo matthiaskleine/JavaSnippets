@@ -11,6 +11,11 @@ import java.util.GregorianCalendar;
 
 import org.apache.commons.lang3.time.DateUtils;
 
+/*********************************************************************************
+ * Some oder date represantations and the Java 8 LocalDate version.
+ * Additionally some conversion methods from the old representations to LocalDate.
+ * @author Matthias Kleine
+ *********************************************************************************/
 public class DateRepresentations {
 
 	// oldest old school, ParseException necessary
